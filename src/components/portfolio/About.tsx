@@ -18,7 +18,7 @@ export const About = () => {
           {/* Left Column: Title and Metrics */}
           <div className="lg:col-span-5 space-y-12">
             <div>
-              <motion.span 
+              <motion.span
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -26,14 +26,16 @@ export const About = () => {
               >
                 Philosophy
               </motion.span>
-              <motion.h2 
+              <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.1 }}
                 className="mt-6 text-4xl sm:text-5xl font-bold tracking-tight leading-[1.1]"
               >
-                Frontend that <span className="text-muted-foreground">scales</span> with the product.
+                Frontend that{" "}
+                <span className="text-muted-foreground">scales</span> with the
+                product.
               </motion.h2>
             </div>
 
@@ -42,7 +44,7 @@ export const About = () => {
                 { label: "Experience", value: "1+" },
                 { label: "SaaS Products", value: "5+" },
               ].map((stat, i) => (
-                <motion.div 
+                <motion.div
                   key={stat.label}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -72,14 +74,22 @@ export const About = () => {
             >
               <div className="space-y-6 text-lg leading-relaxed text-foreground/90">
                 <p>
-                  I'm a frontend developer specialized in building scalable enterprise 
-                  applications. I bridge the gap between complex backend logic and 
-                  intuitive user interfaces, focusing on <span className="font-semibold text-primary">performance</span> and <span className="font-semibold text-primary">maintainability</span>.
+                  I'm a frontend developer specialized in building scalable
+                  enterprise applications. I bridge the gap between complex
+                  backend logic and intuitive user interfaces, focusing on{" "}
+                  <span className="font-semibold text-primary">
+                    performance
+                  </span>{" "}
+                  and{" "}
+                  <span className="font-semibold text-primary">
+                    maintainability
+                  </span>
+                  .
                 </p>
                 <p className="text-base text-muted-foreground">
-                  With a track record of owning end-to-end frontend for HR and 
-                  analytics platforms, I thrive in environments that require 
-                  pixel-perfect execution and clean, modular architecture.
+                  With a track record of owning end-to-end frontend for HR and
+                  analytics platforms, I thrive in environments that require
+                  pixel perfect execution and clean, modular architecture.
                 </p>
               </div>
 

@@ -50,47 +50,29 @@ export const projects: Project[] = [
   {
     title: "HRMS SaaS Platform",
     description:
-      "Multi-tenant HR platform with role-based dashboards, payroll, and attendance modules serving thousands of users.",
-    tech: ["Next.js", "TypeScript", "Tailwind", "Redux"],
+      "Multi-tenant HR platform with role based dashboards, payroll, and attendance modules serving thousands of users.",
+    tech: ["React.js", "TypeScript", "Tailwind"],
     image: "/HRMS.webp",
-    github: "#",
-    live: "#",
+    // github: "#",
+    // live: "#",
   },
   {
     title: "Expense Management System",
     description:
-      "End-to-end expense reporting with approval workflows, analytics, and policy-driven controls.",
-    tech: ["React", "Redux Toolkit", "Tailwind"],
+      "End-to-end expense reporting with approval workflows, analytics, and policy driven controls.",
+    tech: ["React.js", "Typescript", "Tailwind"],
     image: "/expense management.webp",
-    github: "#",
-    live: "#",
-  },
-  {
-    title: "Recruitment Management System",
-    description:
-      "ATS for managing pipelines, interview scheduling, and collaborative hiring across teams.",
-    tech: ["Next.js", "TypeScript", "REST APIs"],
-    image: "/recruitment management.webp",
-    github: "#",
-    live: "#",
-  },
-  {
-    title: "Queue Management System",
-    description:
-      "Real-time token and queue dashboard for service centers, optimized for low-latency updates.",
-    tech: ["React", "WebSockets", "Tailwind"],
-    image: "/Queue.webp",
-    github: "#",
-    live: "#",
+    // github: "#",
+    // live: "#",
   },
   {
     title: "Government Admin Analytics",
     description:
       "High-density analytics dashboard with charts, filters, and role-based access for govt. administrators.",
-    tech: ["React", "Recharts", "Redux"],
+    tech: ["React.js", "Tailwindcss", "javascript"],
     image: "/governemnt dasgboard.webp",
-    github: "#",
-    live: "#",
+    // github: "#",
+    // live: "#",
   },
   {
     title: "Minimal India Marketing Site",
@@ -99,7 +81,25 @@ export const projects: Project[] = [
     tech: ["Next.js", "Framer Motion", "Tailwind"],
     image: "/minimal india.png",
     github: "#",
-    live: "#",
+    live: "https://minimal-india-final.vercel.app/",
+  },
+  {
+    title: "Recruitment Management System",
+    description:
+      "ATS for managing pipelines, interview scheduling, and collaborative hiring across teams.",
+    tech: ["React.js", "TypeScript", "REST APIs"],
+    image: "/recruitment management.webp",
+    // github: "#",
+    // live: "#",
+  },
+  {
+    title: "Queue Management System",
+    description:
+      "Real-time token and queue dashboard for service centers, optimized for low-latency updates.",
+    tech: ["React.js", "Typescript", "Tailwind"],
+    image: "/Queue.webp",
+    // github: "#",
+    // live: "#",
   },
 ];
 
@@ -113,27 +113,28 @@ export interface Experience {
 export const experiences: Experience[] = [
   {
     role: "Frontend Developer",
-    company: "SaaS Product Team",
-    period: "2023 — Present",
+    company: "Imperative Business Ventures LTD",
+    period: "Sept 2025 — Present",
     bullets: [
-      "Owned the frontend for a multi-tenant HRMS platform, shipping features end-to-end across React + Next.js.",
-      "Designed reusable component systems and role-based dashboards used by 5+ enterprise modules.",
-      "Improved bundle size and runtime performance by 40% through code-splitting and memoization.",
+      "Led frontend development and owned UI architecture for 4+ SaaS enterprise platforms including HRMS, Expense Management, Recruitment, and Queue Management systems.",
+      "Developed role-based dashboards and workflow systems with reporting and analytics modules using React.js and Next.js.",
+      "Integrated REST APIs and built scalable, component-based user interfaces ensuring seamless data flow across applications.",
+      "Implemented responsive web design with cross-browser compatibility and optimized performance using modern frontend techniques.",
     ],
   },
   {
-    role: "Frontend Developer",
-    company: "Product & Consulting",
-    period: "2022 — 2023",
+    role: "Full Stack Developer Intern",
+    company: "MyVendex",
+    period: "June 2024 — June 2025",
     bullets: [
-      "Built dashboards, marketing sites, and internal tools with React, Redux, and Tailwind.",
-      "Collaborated closely with design and backend teams to ship pixel-perfect, accessible UIs.",
+      "Developed a vendor management platform using the MERN stack, implementing role-based authentication and workflow systems for admin, vendor, and user roles.",
+      "Built responsive UI components using TailwindCSS and Framer Motion, and integrated REST APIs to enable seamless data handling and user interactions.",
     ],
   },
 ];
 
 export const contactLinks = {
-  email: "rugved.dhorje@example.com",
-  linkedin: "https://www.linkedin.com/in/",
-  github: "https://github.com/",
+  email: "rdhorje67@gmail.com",
+  linkedin: "https://www.linkedin.com/in/rugveddhorje/",
+  github: "https://github.com/RugvedDhorje",
 };

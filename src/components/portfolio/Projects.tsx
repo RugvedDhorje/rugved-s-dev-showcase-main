@@ -111,7 +111,7 @@ export const Projects = () => {
                         )}
                       </div>
                       <div className="flex flex-wrap gap-1 justify-end">
-                        {p.tech.slice(0, 2).map((t) => (
+                        {p.tech.slice(0, 4).map((t) => (
                           <span
                             key={t}
                             className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-gray-100 dark:bg-muted text-gray-600 dark:text-muted-foreground uppercase tracking-wider"
