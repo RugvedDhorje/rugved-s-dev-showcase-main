@@ -101,6 +101,29 @@ export const projects: Project[] = [
     // github: "#",
     // live: "#",
   },
+  {
+    title: "Asset Management",
+    description:
+      "SaaS platform for tracking assets, subscriptions, and equipment lifecycle with role-based dashboards and operational workflows.",
+    tech: ["React.js", "TypeScript", "Tailwind"],
+    image: "/asset-management.webp",
+  },
+  {
+    title: "End-to-End Lead Management & Billing",
+    description:
+      "SaaS platform for lead capture, pipeline tracking, and conversion—with integrated billing, invoicing, and payment workflows across the full sales lifecycle.",
+    tech: ["React.js", "TypeScript", "Tailwind"],
+    image: "/billing-software.webp",
+  },
+  {
+    title: "Vendor Management Platform",
+    description:
+      "Multi-role vendor marketplace for discovering, booking, and managing vendors and services for expos and business events.",
+    tech: ["React.js", "Node.js", "MongoDB"],
+    image: "/vendor-platform.webp",
+    github:"https://github.com/RugvedDhorje/MyVendex-Phase2-main",
+    live:"https://my-vendex-phase2-main.vercel.app/"
+  },
 ];
 
 export interface Experience {

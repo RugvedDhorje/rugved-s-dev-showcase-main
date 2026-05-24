@@ -33,7 +33,7 @@ export const Hero = () => {
             className="inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs font-medium text-muted-foreground"
           >
             <Sparkles className="h-3.5 w-3.5 text-primary" />
-            Available for frontend roles
+            Available for Software Developer roles
           </motion.div>
 
           <motion.h1

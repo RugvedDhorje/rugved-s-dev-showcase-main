@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -15,6 +16,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { toast } from "@/hooks/use-toast";
+import { sendContactMessage } from "@/lib/contact";
 import { SectionHeading } from "./SectionHeading";
 import { contactLinks } from "@/data/portfolio";
 
@@ -26,17 +28,33 @@ const schema = z.object({
 type FormValues = z.infer<typeof schema>;
 
 export const Contact = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const form = useForm<FormValues>({
     resolver: zodResolver(schema),
     defaultValues: { name: "", email: "", message: "" },
   });
 
-  const onSubmit = (values: FormValues) => {
-    toast({
-      title: "Message ready to send",
-      description: `Thanks ${values.name}! I'll get back to you at ${values.email}.`,
-    });
-    form.reset();
+  const onSubmit = async (values: FormValues) => {
+    setIsSubmitting(true);
+    try {
+      await sendContactMessage({
+        name: values.name,
+        email: values.email,
+        message: values.message,
+      });
+      toast({
+        title: "Message sent",
+        description: `Thanks ${values.name}! I'll reply to ${values.email} soon.`,
+      });
+      form.reset();
+    } catch {
+      toast({
+        title: "Could not send message",
+        description: `Please try again or email me at ${contactLinks.email}.`,
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -143,10 +161,11 @@ export const Contact = () => {
                 <Button
                   type="submit"
                   size="lg"
+                  disabled={isSubmitting}
                   className="w-full sm:w-auto bg-gradient-accent text-primary-foreground hover:opacity-90 shadow-elegant"
                 >
                   <Send className="mr-2 h-4 w-4" />
-                  Send message
+                  {isSubmitting ? "Sending…" : "Send message"}
                 </Button>
               </form>
             </Form>
