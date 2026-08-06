@@ -146,9 +146,20 @@ export const experiences: Experience[] = [
     ],
   },
   {
+    role: "Frontend Developer",
+    company: "Almond Technologies Pvt. Ltd.",
+    period: "Jan 2024 — Sep 2025",
+    bullets: [
+      "Developed and maintained role-based SaaS dashboard modules using React.js, building reusable UI components for reporting and analytics features.",
+      "Integrated REST APIs across multiple dashboard modules, ensuring consistent data flow and real-time updates across user roles.",
+      "Built responsive, cross-browser compatible interfaces and collaborated with backend engineers to define API contracts for new features.",
+      "Worked within Git and Bitbucket-based version control workflows to ship production-ready frontend features on a regular release cycle.",
+    ],
+  },
+  {
     role: "Full Stack Developer Intern",
     company: "MyVendex",
-    period: "June 2024 — June 2025",
+    period: "July 2023 — Dec 2023",
     bullets: [
       "Developed a vendor management platform using the MERN stack, implementing role-based authentication and workflow systems for admin, vendor, and user roles.",
       "Built responsive UI components using TailwindCSS and Framer Motion, and integrated REST APIs to enable seamless data handling and user interactions.",
